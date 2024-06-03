@@ -1,0 +1,119 @@
+  .banner-slider {
+    overflow-x: hidden;
+    position: relative;
+
+    .banner-slider-slide {
+      position: relative;
+
+      .image-container {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 200px;
+          background: linear-gradient(to top, rgba($primary-color, 1), rgba(0, 0, 0, 0));
+        }
+      }
+
+      .banner-caption {
+        position: absolute;
+        top: 28%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 200px;
+        text-align: center;
+
+        h3 {
+          font-size: 3.2vw;
+          font-weight: bold;
+          margin-bottom: 60px;
+          font-family: $font-family;
+          color: white;
+          letter-spacing: 2px;
+        }
+
+        .app-links {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .app-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: $primary-color-2;
+            padding: 4px 6px;
+            border-radius: 4px;
+            margin: 0 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+            font-size: 2vw;
+
+            &:hover {
+              background-color: darken(#fff, 5%);
+              color: $primary-color;
+            }
+
+            i {
+              margin-right: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    .slick-dots {
+      z-index: 1000;
+      position: absolute;
+      bottom: 5%;
+      color: white;
+      li {
+        button {
+          background: transparent;
+          height: 2px;
+          border: 2px solid white;
+          width: 2px;
+          border-radius: 50%;
+          &::before {
+            color: transparent;
+          }
+          &:hover{
+            background-color: white;
+          }
+        }
+      }
+      .slick-active{
+        button{
+          background: white;
+          border-color: white;
+        }
+      }
+    }
+  }
+
+
+  @media screen and (max-width: 1024px) {
+    .banner-caption {
+      h3{
+        margin-bottom: 40px!important;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .image-container{
+      &::before{
+        background: linear-gradient(to top, rgba($primary-color, 1), rgba(0, 0, 0, 0))!important;
+      }
+    }
+    .banner-caption {
+      h3{
+        margin-bottom: 10px!important;
+      }
+    }
+  }
