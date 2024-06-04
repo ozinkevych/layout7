@@ -7,21 +7,11 @@
 
       .image-container {
         position: relative;
-
-        &::before {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 200px;
-          background: linear-gradient(to top, rgba($primary-color, 1), rgba(0, 0, 0, 0));
-        }
       }
 
       .banner-caption {
         position: absolute;
-        top: 28%;
+        top: 35%;
         bottom: 0;
         left: 0;
         right: 0;
@@ -59,7 +49,6 @@
               background-color: darken(#fff, 5%);
               color: $primary-color;
             }
-
             i {
               margin-right: 0.5rem;
             }
@@ -102,13 +91,6 @@
     .banner-caption {
       h3{
         margin-bottom: 40px!important;
-      }
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .image-container{
-      &::before{
-        background: linear-gradient(to top, rgba($primary-color, 1), rgba(0, 0, 0, 0))!important;
       }
     }
     .banner-caption {

@@ -1,0 +1,23 @@
+.feature-box {
+  transition: all 0.3s ease;
+  height: 100%;
+  max-width: 270px;
+  margin: 0 auto;
+  padding-top: 20px;
+  .feature-icon {
+    max-width: 100px;
+    margin: 0 auto 20px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  h5 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #6c757d;
+  }
+  p {
+    color: #6c757d;
+  }
+}
