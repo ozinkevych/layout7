@@ -49,6 +49,7 @@
               background-color: darken(#fff, 5%);
               color: $primary-color;
             }
+
             i {
               margin-right: 0.5rem;
             }
@@ -62,27 +63,7 @@
       position: absolute;
       bottom: 5%;
       color: white;
-      li {
-        button {
-          background: transparent;
-          height: 2px;
-          border: 2px solid white;
-          width: 2px;
-          border-radius: 50%;
-          &::before {
-            color: transparent;
-          }
-          &:hover{
-            background-color: white;
-          }
-        }
-      }
-      .slick-active{
-        button{
-          background: white;
-          border-color: white;
-        }
-      }
+      @import "dots.scss";
     }
   }
 

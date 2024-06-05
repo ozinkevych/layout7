@@ -1,83 +1,144 @@
-.share-instantly {
-  background-color: #262626;
-  padding: 40px 0;
+.features {
+  background-color: #313131;
 }
 
-.phone-wrap img {
-  max-width: 100%;
-  height: auto;
+.features-content {
+  padding-left: 170px;
+  h2 {
+    color: white;
+  }
+  p {
+    color: #969696;
+  }
+  .features-slider {
+    h3 {
+      color: $primary-color;
+    }
+    p {
+      color: #969696;
+      font-size: 14px;
+    }
+  }
 }
 
-.content {
-  padding-top: 40px;
-  color: white;
-}
-
-.content h2 {
-  font-size: 36px;
-  font-weight: 700;
-  color: white;
-}
-
-.content p {
-  font-size: 16px;
-  color: #6c757d;
-}
-
-.carousel-indicators {
-  left: 0;
-  right: auto;
-  bottom: -40px;
-}
-
-.carousel-indicators.share-instantly-dots {
-  width: auto;
-  margin: 0;
-  text-align: left;
-}
-
-.carousel-indicators.share-instantly-dots li {
-  z-index: 1000;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 2px solid white;
-  margin: 0 5px;
-}
-
-.carousel-indicators.share-instantly-dots li.active {
+.features-slider {
   background-color: white;
-  border: none;
-  width: 14px;
-  height: 14px;
+  border-radius: 5px 5px 0 0;
+
+  .features-slide {
+    img {
+      width: 80px;
+      height: 80px;
+    }
+    div {
+      padding-left: 20px;
+    }
+  }
+
+  .slick-dots {
+    background-color: $primary-color;
+    border-radius: 0 0 5px 5px;
+    text-align: left;
+    li {
+      button {
+        background: transparent;
+        height: 2px;
+        border: 2px solid white;
+        width: 2px;
+        border-radius: 50%;
+        margin: 0;
+        &::before {
+          color: transparent;
+        }
+        &:hover {
+          background-color: white;
+        }
+      }
+    }
+    .slick-active {
+      button {
+        background: white;
+        border-color: white;
+      }
+    }
+  }
 }
 
-.share-instantly-slide {
+.phone-wrap{
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
-.share-instantly-slide img {
-  margin-right: 1rem;
+.features-slide {
+  padding: 20px;
 }
 
-.carousel-item .row {
-  align-items: center;
+.share {
+  background-color: #262626;
 }
 
-.carousel-item p {
-  font-size: 15px;
+.phone-wrap {
+  display: inline-block;
+  overflow: hidden;
+  max-height: 530px;
+  max-width: 600px;
+}
+
+.share-title {
+  color: white;
+}
+
+.share-content {
+  .share-description {
+    font-size: 15px;
+    padding-left: 40px;
+  }
 }
 
 .video-player {
   width: 100%;
-  max-width: 180px;
-  height: 100px;
+  max-width: 135px;
+  height: 80px;
   background-color: $primary-color;
   border-radius: 5px;
   position: relative;
-  margin: 0 auto;
+}
+
+.share-content-slider {
+  display: flex;
+  align-items: center;
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    li {
+      button {
+        background: transparent;
+        height: 2px;
+        border: 2px solid white;
+        width: 2px;
+        border-radius: 50%;
+        margin: 0;
+        &::before {
+          color: transparent;
+        }
+        &:hover {
+          background-color: white;
+        }
+      }
+    }
+    .slick-active {
+      button {
+        background: white;
+        border-color: white;
+      }
+    }
+  }
+}
+
+.video {
+  padding: 0;
+  margin: auto 0;
 }
 
 .play-button {
@@ -92,35 +153,35 @@
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 768px) {
-  .content {
-    width: 100%;
-    text-align: center; /* Змінено вирівнювання тексту по центру на малих екранах */
+.share-content {
+  p {
+    color: white;
+    padding: 0;
   }
-  .content h2 {
-    font-size: 24px;
-    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .share-content {
+    .share-description {
+      padding: 20px 0;
+    }
   }
-  .content p {
-    font-size: 14px;
-    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .phone-wrap {
+    max-height: 100%;
   }
-  .carousel-indicators.share-instantly-dots {
+  .share-content {
     text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
+    .share-content-slider {
+      .slick-dots {
+        justify-content: center;
+        padding-bottom: 10px;
+      }
+    }
   }
-
   .video-player {
-    margin-bottom: 1rem;
-  }
-
-  .share-instantly-slide {
-    flex-direction: column;
-  }
-
-  .share-instantly-slide img {
-    margin-right: 0;
-    margin-bottom: 1rem;
+    margin: 0 auto;
   }
 }
