@@ -1,0 +1,21 @@
+.app-section {
+  z-index: 1000;
+  padding: 200px 0;
+  background-color: #ff5252;
+  color: #fff;
+
+  .app-image {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+.app-content{
+  padding-left: 40px;
+}
+.app-image{
+  img{
+    border-radius: 50px;
+  }
+}

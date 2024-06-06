@@ -1,0 +1,66 @@
+.taken-image-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+  height: 0;
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .image-caption {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    overflow: visible;
+    .image {
+      transform: translateY(-5%);
+    }
+
+    .image-caption {
+      transform: translateY(0);
+    }
+  }
+}
+
+.taken {
+  padding: 0;
+}
+
+.like {
+  font-size: 20px;
+  display: flex;
+  color: #ff5252;
+
+  i {
+    margin: auto 0;
+    padding-right: 10px;
+  }
+}
+.taken-information{
+  padding-left: 170px;
+  &-title{
+    color: #ff5252;
+  }
+}
+@media screen and (max-width: 992px) {
+  .taken-information{
+    padding: 0 20px;
+  }
+}

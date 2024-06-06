@@ -8,7 +8,9 @@ body{
   padding: 0;
 }
 
-@import "layout/blocks/banner.scss";
+@import "layout/blocks/banner";
 @import "layout/blocks/section-why-ama";
 @import "layout/blocks/share-instantly";
 @import "layout/blocks/features";
+@import "layout/blocks/taken-ama";
+@import "layout/blocks/cta";

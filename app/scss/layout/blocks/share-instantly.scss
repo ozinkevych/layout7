@@ -30,44 +30,13 @@
       width: 80px;
       height: 80px;
     }
+
     div {
       padding-left: 20px;
     }
   }
-
-  .slick-dots {
-    background-color: $primary-color;
-    border-radius: 0 0 5px 5px;
-    text-align: left;
-    li {
-      button {
-        background: transparent;
-        height: 2px;
-        border: 2px solid white;
-        width: 2px;
-        border-radius: 50%;
-        margin: 0;
-        &::before {
-          color: transparent;
-        }
-        &:hover {
-          background-color: white;
-        }
-      }
-    }
-    .slick-active {
-      button {
-        background: white;
-        border-color: white;
-      }
-    }
-  }
 }
 
-.phone-wrap{
-  display: flex;
-  justify-content: center;
-}
 
 .features-slide {
   padding: 20px;
