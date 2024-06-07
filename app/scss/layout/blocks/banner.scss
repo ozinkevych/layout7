@@ -43,7 +43,7 @@
             text-decoration: none;
             transition: all 0.3s ease;
             border: 2px solid white;
-            font-size: 2vw;
+            font-size: clamp(10px, 2vw, 34px);
 
             &:hover {
               background-color: darken(#fff, 5%);

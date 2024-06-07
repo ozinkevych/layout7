@@ -1,0 +1,21 @@
+.compatibility{
+  background-color: #e7e7e7;
+}
+.fa-regular {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.portrait {
+  transform: rotate(90deg);
+}
+.compatibility-ios{
+  h4{
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #6c757d;
+  }
+  p{
+    color: #6c757d;
+  }
+}
