@@ -1,81 +1,81 @@
-  .banner-slider {
-    overflow-x: hidden;
+.banner-slider {
+  overflow-x: hidden;
+  position: relative;
+
+  .banner-slider-slide {
     position: relative;
 
-    .banner-slider-slide {
+    .image-container {
       position: relative;
+    }
 
-      .image-container {
-        position: relative;
+    .banner-caption {
+      position: absolute;
+      top: 35%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 200px;
+      text-align: center;
+
+      h3 {
+        font-size: 3.2vw;
+        font-weight: bold;
+        margin-bottom: 60px;
+        font-family: $font-family;
+        color: white;
+        letter-spacing: 2px;
       }
 
-      .banner-caption {
-        position: absolute;
-        top: 35%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 200px;
-        text-align: center;
+      .app-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        h3 {
-          font-size: 3.2vw;
-          font-weight: bold;
-          margin-bottom: 60px;
-          font-family: $font-family;
-          color: white;
-          letter-spacing: 2px;
-        }
-
-        .app-links {
-          display: flex;
-          justify-content: center;
+        .app-link {
+          display: inline-flex;
           align-items: center;
+          justify-content: center;
+          color: $primary-color-2;
+          padding: 4px 6px;
+          border-radius: 4px;
+          margin: 0 1rem;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          border: 2px solid white;
+          font-size: clamp(10px, 2vw, 34px);
 
-          .app-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            color: $primary-color-2;
-            padding: 4px 6px;
-            border-radius: 4px;
-            margin: 0 1rem;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: 2px solid white;
-            font-size: clamp(10px, 2vw, 34px);
-
-            &:hover {
-              background-color: darken(#fff, 5%);
-              color: $primary-color;
-            }
-            i {
-              margin-right: 0.5rem;
-            }
+          &:hover {
+            background-color: darken(#fff, 5%);
+            color: $primary-color;
+          }
+          i {
+            margin-right: 0.5rem;
           }
         }
       }
     }
-
-    .slick-dots {
-      z-index: 1000;
-      position: absolute;
-      bottom: 5%;
-      color: white;
-      @import "dots.scss";
-    }
   }
 
+  .slick-dots {
+    z-index: 1000;
+    position: absolute;
+    bottom: 5%;
+    color: white;
+    @import "dots.scss";
+  }
+}
 
-  @media screen and (max-width: 1024px) {
-    .banner-caption {
-      h3{
-        margin-bottom: 40px!important;
-      }
-    }
-    .banner-caption {
-      h3{
-        margin-bottom: 10px!important;
-      }
+
+@media screen and (max-width: 1024px) {
+  .banner-caption {
+    h3{
+      margin-bottom: 40px!important;
     }
   }
+  .banner-caption {
+    h3{
+      margin-bottom: 10px!important;
+    }
+  }
+}

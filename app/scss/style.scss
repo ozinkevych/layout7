@@ -8,6 +8,7 @@ body{
   padding: 0;
 }
 
+@import "layout/header";
 @import "layout/blocks/banner";
 @import "layout/blocks/section-why-ama";
 @import "layout/blocks/share-instantly";
@@ -15,3 +16,4 @@ body{
 @import "layout/blocks/taken-ama";
 @import "layout/blocks/cta";
 @import "layout/blocks/compatibility";
+@import "layout/footer";
