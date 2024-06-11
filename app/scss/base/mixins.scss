@@ -1,0 +1,49 @@
+@mixin app-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+  color: $primary-color-2;
+  padding: 4px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 3px solid white;
+  font-size: clamp(10px, 2vw, 42px);
+  margin: 0 1rem;
+
+  &:hover {
+    background-color: darken(#fff, 5%);
+    color: $primary-color;
+  }
+
+  i {
+    margin-right: 0.5rem;
+  }
+}
+@mixin slick-dots-li-styles {
+  li {
+    button {
+      background: transparent;
+      height: 2px;
+      border: 2px solid $primary-color-2;
+      width: 2px;
+      border-radius: 50%;
+      margin: 0;
+
+      &::before {
+        color: transparent;
+      }
+
+      &:hover {
+        background-color: $primary-color-2;
+      }
+    }
+
+    &.slick-active {
+      button {
+        background: $primary-color-2;
+        border-color: $primary-color-2;
+      }
+    }
+  }
+}

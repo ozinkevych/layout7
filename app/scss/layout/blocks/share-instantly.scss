@@ -1,63 +1,24 @@
-.features {
-  background-color: #313131;
-}
 
-.features-content {
-  padding-left: 170px;
-  h2 {
-    color: white;
-  }
-  p {
-    color: #969696;
-  }
-  .features-slider {
-    h3 {
-      color: $primary-color;
-    }
-    p {
-      color: #969696;
-      font-size: 14px;
-    }
-  }
-}
-
-.features-slider {
-  background-color: white;
-  border-radius: 5px 5px 0 0;
-
-  .features-slide {
-    img {
-      width: 80px;
-      height: 80px;
-    }
-
-    div {
-      padding-left: 20px;
-    }
-  }
-}
-
-
-.features-slide {
-  padding: 20px;
-}
-
-.share {
+.share-instantly {
   background-color: #262626;
 }
 
-.phone-wrap {
-  display: inline-block;
-  overflow: hidden;
-  max-height: 530px;
-  max-width: 600px;
+.share-instantly-phone {
+  align-items: flex-end;
+  img{
+    width: 450px;
+  }
 }
 
-.share-title {
-  color: white;
+.share-content-title {
+  color: $primary-color-2;
 }
 
-.share-content {
+.share-instantly-content {
+  p {
+    color: $font-color;
+    padding: 0;
+  }
   .share-description {
     font-size: 15px;
     padding-left: 40px;
@@ -80,28 +41,7 @@
     display: flex;
     align-items: center;
     margin-left: 0;
-    li {
-      button {
-        background: transparent;
-        height: 2px;
-        border: 2px solid white;
-        width: 2px;
-        border-radius: 50%;
-        margin: 0;
-        &::before {
-          color: transparent;
-        }
-        &:hover {
-          background-color: white;
-        }
-      }
-    }
-    .slick-active {
-      button {
-        background: white;
-        border-color: white;
-      }
-    }
+    @include slick-dots-li-styles;
   }
 }
 
@@ -115,22 +55,16 @@
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 30px solid white;
+  border-left: 30px solid $primary-color-2;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.share-content {
-  p {
-    color: white;
-    padding: 0;
-  }
-}
 
 @media screen and (max-width: 992px) {
-  .share-content {
+  .share-instantly-content {
     .share-description {
       padding: 20px 0;
     }
@@ -138,10 +72,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .phone-wrap {
-    max-height: 100%;
+  .share-instantly-phone {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
   }
-  .share-content {
+  .share-instantly-content {
     text-align: center;
     .share-content-slider {
       .slick-dots {

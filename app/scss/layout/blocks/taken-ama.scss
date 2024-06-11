@@ -1,8 +1,6 @@
 .taken-with-ama{
   overflow: hidden;
 }
-
-
 .taken-image-container {
   position: relative;
   overflow: hidden;
@@ -16,7 +14,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
   }
 
   .image-caption {
@@ -26,8 +24,8 @@
     left: 0;
     right: 0;
     padding: 20px;
-    background-color: black;
-    color: #fff;
+    background-color: $primary-color-3;
+    color: $primary-color-2;
     transform: translateY(100%);
     transition: transform 0.3s ease;
   }
@@ -51,7 +49,7 @@
 .like {
   font-size: 20px;
   display: flex;
-  color: #ff5252;
+  color: $primary-color;
 
   i {
     margin: auto 0;
@@ -59,9 +57,15 @@
   }
 }
 .taken-information{
-  padding-left: 170px;
+  padding: 0 60px 0 100px;
   &-title{
-    color: #ff5252;
+    color: $primary-color;
+  }
+}
+.img-like{
+  &:hover {
+    color: red;
+    cursor: pointer;
   }
 }
 @media screen and (max-width: 992px) {

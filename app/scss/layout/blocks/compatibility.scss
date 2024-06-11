@@ -1,24 +1,24 @@
 .compatibility{
-  background-color: #e7e7e7;
+  background-color: $primary-color-4;
   padding: 80px 0;
   h2{
     font-weight: 600;
     font-size: 20px;
-    color: #6c757d;
+    color: $font-color;
     margin: 0;
   }
 }
 .compatibility-information{
-  padding: 0 15px;
+  padding-right: 30px;
 }
 .compatibility-block{
   h4{
     font-weight: 600;
-    color: #6c757d;
+    color: $font-color;
     margin-bottom: 0;
   }
   p{
-    color: #6c757d;
+    color: $font-color;
   }
   img{
     padding: 30px 0;

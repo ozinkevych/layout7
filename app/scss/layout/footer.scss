@@ -1,8 +1,16 @@
 footer {
-  background-color: #f8f9fa;
+  background-color: $primary-color-2;
   padding: 40px 0;
-
+  .footer-text-block{
+    p{
+      color: $font-color;
+      font-weight: bold;
+    }
+  }
   .form-inline {
+    .form-title{
+      color: $font-color;
+    }
     .form-control {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
@@ -11,13 +19,18 @@ footer {
       font-size: 1rem;
       line-height: 1.5;
       width: 350px;
+
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 0 0.2rem rgba(229, 57, 53, 0.25);
+      }
     }
 
     .btn {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
-      background-color: #e53935;
-      border-color: #e53935;
+      background-color: $primary-color;
+      border-color: $primary-color;
       color: #fff;
       font-weight: 400;
       padding: 8px 10px;
@@ -26,9 +39,23 @@ footer {
       height: calc(1.5em + 0.75rem + 2px);
 
       &:hover {
-        background-color: #c62828;
-        border-color: #c62828;
+        background-color: #c62828!important;
+        border-color: #c62828!important;
       }
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-text-block{
+    text-align: center;
+  }
+  .form-inline{
+    justify-content: center!important;
+    .form-control {
+      width: 250px!important;
+    }
+  }
+  .form-title{
+    text-align: center;
   }
 }
