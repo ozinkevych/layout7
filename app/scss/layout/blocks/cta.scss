@@ -1,34 +1,35 @@
 .cta {
   z-index: 1000;
-  padding: 200px 0;
+  padding: 160px 0;
   background-color: $primary-color;
   color: #fff;
   overflow: hidden;
   .app-image {
     img {
-      max-width: 100%;
+      max-width: 220px;
       height: auto;
+      padding: 10px 10px 0 0;
     }
   }
 }
 .app-content{
-  padding-left: 40px;
+  padding-left: 20px;
   position: relative;
 }
 .app-image {
-  padding-left: 100px;
-  position: relative; // Додано для позиціонування псевдоелемента
+  padding-left: 120px;
+  position: relative;
 
   &:after {
     content: "";
     position: absolute;
-    top: 60px;
+    top: 65px;
     left: 180px;
     width: calc(80%);
-    height: calc(120%);
+    height: calc(116%);
     z-index: -1;
     transform: rotate(40deg);
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), transparent); /* Змінено напрямок градієнту */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), transparent);
 
   }
 
@@ -43,19 +44,23 @@
   display: flex;
   justify-content: left;
   align-items: center;
+
   .app-link {
     @include app-link;
   }
 }
 .cta-title-text {
-  width: 350px;
+  width: 400px;
   margin: 0;
+  @include title-styles;
 }
 .cta-title-text{
   padding-left: 16px;
 }
 .cta-subtitle{
   padding-left: 16px;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 @media screen and (max-width: 992px) {
   .app-content{
@@ -71,10 +76,10 @@
       padding: 0 0 20px 0;
       text-align: center;
       &:after{
-        top: 40px;
+        top: 30px;
         left: 100px;
-        width: calc(80%);
-        height: calc(110%);
+        width: calc(57%);
+        height: calc(108%);
       }
       img{
         margin: 0 auto;

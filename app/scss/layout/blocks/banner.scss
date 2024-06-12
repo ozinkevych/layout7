@@ -1,4 +1,5 @@
 .banner-slider {
+  margin-top: 88px;
   overflow-x: hidden;
   position: relative;
 
@@ -11,17 +12,50 @@
 
     .banner-caption {
       position: absolute;
-      top: 25%;
+      top: 30%;
       bottom: 0;
       left: 0;
       right: 0;
       height: 200px;
       text-align: center;
-      h3 {
-        font-size: 3.2vw;
-        margin-bottom: 10vh;
-        color: white;
+      h1 {
+        font-size: 84px;
+        font-weight: bold;
         letter-spacing: 2px;
+        margin-bottom: 60px;
+        color: white;
+        @media (max-width: 1200px) {
+          font-size: 64px;
+        }
+
+        @media (max-width: 992px) {
+          font-size: 48px;
+          margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 34px;
+        }
+
+        @media (max-width: 576px) {
+          font-size: 16px;
+          margin-bottom: 20px;
+        }
+
+        @media (max-width: 400px) {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .app-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .app-link {
+          @include app-link;
+        }
       }
       .app-links {
         display: flex;
@@ -41,12 +75,18 @@
     bottom: 5%;
     color: white;
     @include slick-dots-li-styles;
+    @media screen and (max-width: 500px){
+      li{
+        button{
+          margin-top: 20px;
+        }
+      }
+    }
   }
 }
 
 
 @media screen and (max-width: 992px) {
-
   .banner-caption {
     h3{
       margin-bottom: 10px!important;
@@ -59,4 +99,5 @@
       border: 1px solid white!important;
     }
   }
+
 }

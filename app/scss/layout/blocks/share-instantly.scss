@@ -12,6 +12,7 @@
 
 .share-content-title {
   color: $primary-color-2;
+  @include title-styles;
 }
 
 .share-instantly-content {
@@ -27,7 +28,7 @@
 
 .video-player {
   width: 100%;
-  max-width: 135px;
+  max-width: 160px;
   height: 80px;
   background-color: $primary-color;
   border-radius: 5px;
@@ -53,9 +54,9 @@
 .play-button {
   width: 0;
   height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 30px solid $primary-color-2;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 25px solid $primary-color-2;
   position: absolute;
   top: 50%;
   left: 50%;

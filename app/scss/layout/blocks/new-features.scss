@@ -5,12 +5,19 @@
   display: flex;
   justify-content: end;
 }
+.features-slider-background{
+  padding-top: 20px;
+  p{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+}
 .new-features-content {
-  padding: 50px 70px 0 100px;
-  width: 400px;
+  padding: 100px 30px 0 120px;
+
   h2 {
+    @include title-styles;
     color: $primary-color-2;
-    padding-top: 60px;
   }
   p {
     color: $font-color;
@@ -28,9 +35,10 @@
 .phone-wrap-2 {
   display: inline-block;
   overflow: hidden;
-  max-width: 600px;
+  max-width: 440px;
   img{
     margin: 0 auto;
+    padding-right: 40px;
   }
 }
 .features-slider {
@@ -39,27 +47,25 @@
 
   .features-slide {
     img {
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
       margin: auto 0;
     }
     div {
       padding-left: 20px;
     }
   }
-
   .slick-dots {
-
     background-color: $primary-color;
     border-radius: 0 0 5px 5px;
     text-align: left;
-    padding-left: 20px;
+    padding: 5px 0 5px 30px;
+
     @include slick-dots-li-styles;
   }
 }
-
 .features-slide {
-  padding: 20px;
+  padding: 30px 40px 40px 30px;
 }
 @media screen and (max-width: 992px) {
 .new-features-content{
@@ -69,7 +75,17 @@
     padding: 0;
   }
 }
+  .phone-wrap-2 {
+    img {
+      padding: 0;
+    }
+  }
   .phone-container{
     justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .features-slide {
+    padding: 10px 10px 30px 10px;
   }
 }

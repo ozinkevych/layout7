@@ -57,9 +57,10 @@
   }
 }
 .taken-information{
-  padding: 0 60px 0 100px;
+  padding: 0 60px 0 120px;
   &-title{
     color: $primary-color;
+    @include title-styles;
   }
 }
 .img-like{
@@ -71,5 +72,6 @@
 @media screen and (max-width: 992px) {
   .taken-information{
     padding: 0 20px;
+    text-align: center;
   }
 }
