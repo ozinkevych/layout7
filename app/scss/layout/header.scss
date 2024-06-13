@@ -4,15 +4,16 @@ header{
   z-index: 1001;
 }
 .menu {
-  background-color: $primary-color;
+  background-color: $red-base-color;
+
 }
 .menu-logo{
-  color: white;
+  color: $white-font;
   font-size: 40px;
   font-weight: bold;
 }
 .navbar-toggler {
-  border-color: #fff;
+  border-color: $white-font;
 
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -22,9 +23,13 @@ header{
     }
   }
 }
+.navbar-collapse {
+  height: 88px;
+}
 .navbar-nav {
+  height: 100%;
   .nav-link {
-    color: white !important;
+    color: $white-font !important;
     position: relative;
     margin: 0 5px;
     padding: 30px 15px !important;
@@ -35,8 +40,8 @@ header{
       top: 0;
       left: 50%;
       width: 0;
-      height: 4px;
-      background-color: white;
+      height: 5px;
+      background-color: $white-font;
       transition: width 0.3s ease, left 0.3s ease;
     }
 
@@ -58,7 +63,9 @@ header{
   }
 }
 @media screen and (max-width: 992px) {
-
+  .navbar-collapse {
+    height: 100%;
+  }
 .menu-list{
   text-align: center;
   li{

@@ -2,17 +2,17 @@
   display: inline-flex;
   align-items: center;
   justify-content: left;
-  color: $primary-color-2;
+  color: $white-font;
   padding: 10px 20px;
   border-radius: 4px;
   text-decoration: none;
   transition: all 0.3s ease;
-  border: 3px solid white;
+  border: 3px solid $white-font;
   font-size: 28px;
   margin: 0 12px;
   &:hover {
     background-color: darken(#fff, 5%);
-    color: $primary-color;
+    color: $red-base-color;
   }
   i {
     margin-right: 10px;
@@ -53,15 +53,13 @@
 
 @mixin slick-dots-li-styles {
   li {
+    font-size: 10px;
     margin: 0;
-    width: 20px;
-    height: 20px;
-
     button {
       background: transparent;
       height: 1px;
       width: 1px;
-      border: 1px solid $primary-color-2;
+      border: 1px solid $white-font;
       border-radius: 50%;
 
       &::before {
@@ -69,14 +67,14 @@
       }
 
       &:hover {
-        background-color: $primary-color-2;
+        background-color: $white-font;
       }
     }
 
     &.slick-active {
       button {
-        background: $primary-color-2;
-        border-color: $primary-color-2;
+        background: $white-font;
+        border-color: $white-font;
       }
     }
   }
