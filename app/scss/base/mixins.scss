@@ -42,9 +42,10 @@
     }
   }
 
-  @media (max-width: 676px) {
+  @media (max-width: 576px) {
     font-size: 14px;
     padding: 2px 4px;
+    border: 1px solid $white-font;
     i {
       font-size: 14px;
     }
@@ -79,14 +80,14 @@
     }
   }
 }
-  @mixin title-styles{
+@mixin title-styles{
   font-size: 40px;
   font-weight: bold;
   letter-spacing: 3px;
-    @media (max-width: 768px) {
-      font-size: 34px;
-    }
-    @media (max-width: 500px) {
-      font-size: 24px;
-    }
+  @media (max-width: 768px) {
+    font-size: 34px;
+  }
+  @media (max-width: 576px) {
+    font-size: 24px;
+  }
 }

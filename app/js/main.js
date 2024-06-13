@@ -41,20 +41,14 @@ form.addEventListener('submit', function(event) {
     form.classList.add('was-validated');
 });
 // like
-document.addEventListener('DOMContentLoaded', function () {
-    const heartIcons = document.querySelectorAll('.img-like');
-
-    heartIcons.forEach(function (heartIcon) {
-        heartIcon.addEventListener('click', function handleClick() {
-            const likeCount = parseInt(this.dataset.likeCount, 10);
-            const likeCountElement = this.parentNode.querySelector('.like-count');
-
-            const newLikeCount = likeCount + 1;
-            likeCountElement.textContent = newLikeCount;
-            this.dataset.likeCount = newLikeCount;
-
-            this.classList.add('fa-solid');
-            this.removeEventListener('click', handleClick);
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.img-like').forEach(heartIcon => {
+        heartIcon.addEventListener('click', () => {
+            const likeCountElement = heartIcon.parentNode.querySelector('.like-count');
+            const likeCount = parseInt(heartIcon.dataset.likeCount, 10) || 0;
+            const isLiked = heartIcon.classList.toggle('fa-solid');
+            heartIcon.dataset.likeCount = isLiked ? likeCount + 1 : likeCount - 1;
+            likeCountElement.textContent = heartIcon.dataset.likeCount;
         });
     });
 });

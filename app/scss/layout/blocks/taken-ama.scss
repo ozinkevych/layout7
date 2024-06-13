@@ -50,7 +50,9 @@
   font-size: 20px;
   display: flex;
   color: $red-base-color;
-
+  p{
+    margin: auto 0;
+  }
   i {
     margin: auto 0;
     padding-right: 10px;
@@ -88,5 +90,10 @@
   .taken-information{
     padding: 0 20px;
     text-align: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .taken {
+    margin-top: -10vh;
   }
 }
