@@ -14,10 +14,5 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^3.0.0",
     "sass": "^1.77.2"
-  },
-  "dependencies": {
-    "fortawesome/fontawesome-free": "^6.5.2",
-    "bootstrap": "^4.6.2",
-    "slick-carousel": "^1.8.1"
   }
 }

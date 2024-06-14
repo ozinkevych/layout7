@@ -302,8 +302,8 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col-lg-6 col-md-12 taken-information">
-                <h2 class="h1 taken-information-title mb-4 mt-4">Taken with ama</h2>
-                <p class="mb-5">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+                <h2 class=" taken-information-title mb-3 mt-4">Taken with ama</h2>
+                <p>Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
             </div>
         </div>
     </div>
@@ -311,13 +311,13 @@
         <div class="row">
             <!--images-1 -->
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 taken">
-                <div class="hover-effect mt-5">
+                <div class="hover-effect">
                     <div class="taken-image-container">
                         <img src="img/taken-with-ama/photo1.png" alt="taken-with-ama" class="image">
                         <div class="image-caption justify-content-between">
                             <p class="card-text">Mauris euismod ultrices</p>
-                            <div class="like">
-                                <i class="fa-regular fa-heart img-like " data-like-count="65"></i>
+                            <div class="like ">
+                                <i class="fa-regular fa-heart img-like" data-like-count="65"></i>
                                 <p class="like-count">65</p>
                             </div>
                         </div>
@@ -326,7 +326,7 @@
             </div>
             <!--images-2 -->
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 taken">
-                <div class="hover-effect mt-5">
+                <div class="hover-effect">
                     <div class="taken-image-container">
                         <img src="img/taken-with-ama/photo2.png" alt="taken-with-ama" class="image">
                         <div class="image-caption justify-content-between">
@@ -340,8 +340,8 @@
                 </div>
             </div>
             <!--images-3 -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 taken">
-                <div class="hover-effect mt-5">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 taken ">
+                <div class="hover-effect">
                     <div class="taken-image-container">
                         <img src="img/taken-with-ama/photo3.png" alt="taken-with-ama" class="image">
                         <div class="image-caption justify-content-between">
@@ -356,7 +356,7 @@
             </div>
             <!--images-4 -->
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 taken">
-                <div class="hover-effect mt-5">
+                <div class="hover-effect">
                     <div class="taken-image-container">
                         <img src="img/taken-with-ama/photo4.png" alt="taken-with-ama" class="image">
                         <div class="image-caption justify-content-between">
@@ -435,15 +435,20 @@
                 <form class="form-inline needs-validation justify-content-end" id="subscribeForm" novalidate>
                     <div>
                         <label class="d-block mb-3 form-title">Subscribe to our email newsletter.</label>
+
                         <div class="form-block">
-                            <input required type="email" class="form-control" id="inputEmail" placeholder="Your email" aria-label="Your email">
+                            <input required type="email" class="form-control" id="inputEmail" placeholder="Your email" aria-label="Your email" aria-describedby="emailHelpBlock">
+
                             <button type="submit" class="btn">Submit</button>
+                            <div id="emailHelpBlock" class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="col-md-12 col-lg-6 footer-text-block">
-                <p> &copy; 2014 ama. All Rights Reserved. </p>
+                <p>&copy; 2014 ama. All Rights Reserved.</p>
             </div>
         </div>
     </div>

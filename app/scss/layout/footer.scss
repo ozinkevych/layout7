@@ -17,15 +17,15 @@ footer {
 
     .form-control {
       border-color: #ced4da;
-      padding: 0.375rem 0.75rem;
-      font-size: 1rem;
+      padding: 12px 18px;
+      font-size: 16px;
       line-height: 1.5;
       width: 280px;
       height: 44px;
 
       &:focus {
         border-color: $red-base-color;
-        box-shadow: 0 0 0 0.2rem rgba(229, 57, 53, 0.25);
+        box-shadow: 0 0 0 2px rgba(229, 57, 53, 0.25);
       }
     }
 
@@ -37,37 +37,54 @@ footer {
       padding: 10px 18px;
       font-size: 15px;
       line-height: 1.5;
+
       @media screen and (max-width: 576px) {
         margin: 10px auto;
+
         &:hover {
-          background-color: $red-color !important;
-          border-color: $red-color !important;
+          background-color: $red-color;
+          border-color: $red-color;
         }
       }
     }
   }
 }
-.navbar-brand{
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 4px;
+  font-size: 14px;
+  color: $red-base-color;
+  font-style: italic;
+}
+.navbar-brand {
   padding-left: 20px;
   font-size: 52px;
-  &:hover{
+
+  &:hover {
     color: $white-font;
   }
 }
+
 @media screen and (max-width: 998px) {
-  .footer-text-block{
+  .footer-text-block {
     text-align: center;
-    p{
-      padding: 10px 0!important;
+    p {
+      padding: 10px 0 !important;
     }
   }
-  .form-inline{
-    justify-content: center!important;
+
+  .form-inline {
+    div{
+      margin: 0 auto;
+    };
+
     .form-control {
-      width: 250px!important;
+      width: 250px;
     }
   }
-  .form-title{
+
+  .form-title {
     text-align: center;
   }
 }

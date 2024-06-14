@@ -29,20 +29,29 @@
   p{
     color: $font-color;
   }
-  img{
+  .compatibility-img-android{
+    max-width: 90%;
+    padding: 45px 0 30px 0;
+  }
+  .compatibility-img-ios{
+    max-width: 90%;
     padding: 30px 0;
-    max-width: 100%;
   }
 }
 
 @media screen and (max-width: 992px) {
-.compatibility{
- padding: 40px 20px;
-  text-align: center;
-}
-  .compatibility-information{
-    padding: 0;
+  .compatibility-block{
+    .compatibility-img-android, .compatibility-img-ios{
+        padding: 20px 0;
+      }
   }
+  .compatibility{
+   padding: 40px 20px;
+    text-align: center;
+  }
+    .compatibility-information{
+      padding: 0;
+    }
 }
 @media screen and (max-width: 420px) {
   .compatibility-img-android{

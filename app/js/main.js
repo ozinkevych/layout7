@@ -31,11 +31,15 @@ navbarToggler.addEventListener('click', function () {
 });
 //form validation
 const form = document.getElementById('subscribeForm');
+const invalidFeedback = document.querySelector('.invalid-feedback');
 
 form.addEventListener('submit', function(event) {
     if (!form.checkValidity()) {
         event.preventDefault();
         event.stopPropagation();
+        invalidFeedback.style.display = 'block';
+    } else {
+        invalidFeedback.style.display = 'none';
     }
 
     form.classList.add('was-validated');
